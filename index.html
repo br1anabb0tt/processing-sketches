@@ -22,19 +22,18 @@
 	</script>
   </head>
   
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Static and dynamic starry background</h1>
-        <p>next step: add motion</p>
-        <p class="view"><a href="https://github.com/br1anabb0tt/processing-sketches">View the Project on GitHub <small>br1anabb0tt/starry_bg</small></a></p>
-        <ul>
-          <li><a href="https://github.com/br1anabb0tt/starry_bg/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/br1anabb0tt/starry_bg/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/br1anabb0tt/starry_bg">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Static and dynamic starry background</h1>
+			<p>next step: add motion</p>
+			<p class="view"><a href="https://github.com/br1anabb0tt/processing-sketches">View the Project on GitHub <small>br1anabb0tt/starry_bg</small></a></p>
+			<ul>
+			  <li><a href="https://github.com/br1anabb0tt/starry_bg/zipball/master">Download <strong>ZIP File</strong></a></li>
+			  <li><a href="https://github.com/br1anabb0tt/starry_bg/tarball/master">Download <strong>TAR Ball</strong></a></li>
+			  <li><a href="https://github.com/br1anabb0tt/starry_bg">View On <strong>GitHub</strong></a></li>
+			</ul>
+		</header>
 
 		<div id="content">
 			<div>
@@ -46,55 +45,49 @@
 				<noscript>
 					<p>JavaScript is required to view the contents of this page.</p>
 				</noscript>
-	    	</div>
-			
+			</div>			
 		</div>
-		
       
-      <section>
-        <!--
-        <h3><a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-		-->
-		<h1>starry1</h1>
-    		<p id="description"></p>
+		<section>
+			<h1>starry1</h1>
+			<p id="description">click to terminate proliferation of stars</p>
 			<p id="sources">Source code: <a href="starry1.pde">starry1</a> (or see below)</p>
 			<p>
 			Built with <a href="http://processing.org" title="Processing">Processing</a>
 			and <a href="http://processingjs.org" title="Processing.js">Processing.js</a>
 			</p>
-		<pre><code>
+			<pre><code>
 /* @pjs preload="http://brianpabbott.com/processing/images/starry-bg.png"; */
 
 float largePoint;
 PImage img;
 
 void setup() {
-  size(640, 360);
-  largePoint = 4;
-  noStroke();
-  img = loadImage("http://brianpabbott.com/processing/images/starry-bg.png");
-  background(img);
+size(640, 360);
+largePoint = 4;
+noStroke();
+img = loadImage("http://brianpabbott.com/processing/images/starry-bg.png");
+background(img);
 }
 
 void draw() { 
-  int starX = int(random(width));
-  int starY = int(random(height));
-  fill(255, 255, 255);
-  ellipse(starX, starY, largePoint, largePoint);
+int starX = int(random(width));
+int starY = int(random(height));
+fill(255, 255, 255);
+ellipse(starX, starY, largePoint, largePoint);
 }
 
 void mousePressed() {
-   noLoop();
+noLoop();
 }
-		</code></pre>
-
-	  </section>
+			</code></pre>
+		</section>
 	</div>
     <footer>
       <p>Project maintained by <a href="https://github.com/br1anabb0tt">br1anabb0tt</a></p>
       <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
     </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->   
-  </body>
+</body>
 
 </html>
