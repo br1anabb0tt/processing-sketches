@@ -65,7 +65,7 @@ header {
   background: -ms-linear-gradient(#ddfbfc, #c6eafa);
   background: linear-gradient(#ddfbfc, #c6eafa);
   position: relative;
-  padding: 15px 20px;
+  padding: 15px 20px 50px 20px;
   border-bottom: 1px solid #B2D2E1;
 }
 header h1 {
@@ -86,16 +86,19 @@ header p {
   width: 300px;
   font-size: 13px;
 }
-header p.view {
+header .view {
   display: none;
   font-weight: 700;
   text-shadow: rgba(255, 255, 255, 0.9) 0 1px 0;
   -webkit-font-smoothing: antialiased;
 }
-header p.view a {
+header .view a {
   color: #06c;
 }
-header p.view small {
+header .view a:hover {
+	color: #737F8C;
+}
+header .view small {
   font-weight: 400;
 }
 header ul {
@@ -145,6 +148,9 @@ header ul li {
   border-right: 1px solid #3A7CBE;
   height: 38px;
 }
+header ul li:hover {
+	background: #737F8C;
+}
 header ul li.single {
   border: none;
 }
@@ -174,9 +180,13 @@ header ul a strong {
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
+header ul#navlinks {
+	top: 75px;
+}
 canvas { 
 	display: block; 
 	outline: 0px;
+	margin: 0 auto;
 }
 section {
   padding: 15px 20px;
@@ -345,7 +355,7 @@ footer p + p {
     display: none;
   }
 
-  header p.view {
+  header .view {
     display: block;
   }
 
@@ -354,7 +364,7 @@ footer p + p {
   }
 }
 @media print {
-  header p.view a small:before {
+  header .view a small:before {
     content: 'at http://github.com/';
   }
 }
